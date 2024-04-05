@@ -547,6 +547,11 @@ video {
   --tw-contain-style:  ;
 }
 
+.bg-deep-blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 0 38 / var(--tw-bg-opacity));
+}
+
 html,
 body,
 #root,

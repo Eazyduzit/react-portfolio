@@ -1,5 +1,10 @@
+import { useState } from "react"
+import useMediaQuery from "./hooks/useMediaQuery"
+
 function App() {
-  return <div className="App">Hola Mundo!</div>
+  const [selectedPage, setSelectedPage] = useState("home")
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
+  return <div className="app bg-deep-blue">Hola Mundo!</div>
 }
 
 export default App
