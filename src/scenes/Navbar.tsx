@@ -28,7 +28,9 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
         <h4 className="font-playfair text-3xl font-bold">JE</h4>
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold"></div>
+          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
+            <Link page="home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+          </div>
         ) : (
           <div></div>
         )}
