@@ -3,8 +3,6 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import useMediaQuery from "../hooks/useMediaQuery"
 import React from "react"
 
-type Props = {}
-
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase()
   return (
@@ -19,7 +17,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   )
 }
 
-const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
+const Navbar = ({ selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false)
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)")
   return (
@@ -29,10 +27,16 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
           <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
-            <Link page="home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+            <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+            <Link page="Skills" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+            <Link page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+            <Link page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+            <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
           </div>
         ) : (
-          <div></div>
+          <button className="rounded-full bg-red pd-2" onClick={()=>setIsMenuToggled(!isMenuToggled)}>
+            <img src="../assets/menu-icon.svg" alt="menu-icon" />
+          </button>
         )}
       </div>
     </nav>
