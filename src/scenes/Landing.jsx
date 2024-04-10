@@ -30,18 +30,29 @@ const Landing = ({ setSelectedPage }) => {
             src="assets/profile-image.png"
           />
         )}
+      </div>
+      {/* MAIN SECTION */}
+      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+        {/* HEADINGS */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }}
+        >
+          <p className="text-6xl font-playfair z-10 text-center md:text-start">
+            Jane {""}
+            <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]">
+              Esper
+            </span>
+          </p>
 
-        {/* MAIN SECTION */}
-        <div className="z-30 basis-2/5 mt-12 md:mt-32">
-          {/* HEADINGS */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }}
-          ></motion.div>
-        </div>
+          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+            Adipiscing arcu, in alquiam fringilla cursus. Elit arcu elementum viverra malesuada sem
+            ac faucibus dolor. Sagittis scelerisque.
+          </p>
+        </motion.div>
       </div>
     </section>
   )

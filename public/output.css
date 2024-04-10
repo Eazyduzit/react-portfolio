@@ -620,6 +620,14 @@ video {
   margin-top: 3rem;
 }
 
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .flex{
   display: flex;
 }
