@@ -725,10 +725,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded{
-  border-radius: 0.25rem;
-}
-
 .rounded-sm{
   border-radius: 0.125rem;
 }
@@ -775,24 +771,14 @@ video {
   padding: 0.5rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-7{
   padding-left: 1.75rem;
   padding-right: 1.75rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .py-0{
@@ -805,9 +791,19 @@ video {
   padding-bottom: 0.125rem;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pr-0{
@@ -885,6 +881,11 @@ video {
   content: var(--tw-content);
 }
 
+.content-linkedin{
+  --tw-content: url('./assets/linkedin.png');
+  content: var(--tw-content);
+}
+
 .content-menuIcon{
   --tw-content: url('./assets/menu-icon.svg');
   content: var(--tw-content);
@@ -892,6 +893,21 @@ video {
 
 .content-profileImg{
   --tw-content: url('./assets/profile-image.png');
+  content: var(--tw-content);
+}
+
+.content-facebook{
+  --tw-content: url('./assets/facebook.png');
+  content: var(--tw-content);
+}
+
+.content-instagram{
+  --tw-content: url('./assets/instagram.png');
+  content: var(--tw-content);
+}
+
+.content-twitter{
+  --tw-content: url('./assets/twitter.png');
   content: var(--tw-content);
 }
 
@@ -1003,9 +1019,9 @@ body,
   background-color: rgb(44 188 233 / var(--tw-bg-opacity));
 }
 
-.hover\:text-yellow:hover{
+.hover\:text-red:hover{
   --tw-text-opacity: 1;
-  color: rgb(253 204 73 / var(--tw-text-opacity));
+  color: rgb(220 68 146 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover{
@@ -1013,9 +1029,9 @@ body,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-red:hover{
+.hover\:text-yellow:hover{
   --tw-text-opacity: 1;
-  color: rgb(220 68 146 / var(--tw-text-opacity));
+  color: rgb(253 204 73 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-50:hover{

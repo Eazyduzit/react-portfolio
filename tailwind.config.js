@@ -31,6 +31,10 @@ export const theme = {
       profileImg: "url('./assets/profile-image.png')",
       menuIcon: "url('./assets/menu-icon.svg')",
       closeIcon: "url('./assets/close-icon.svg')",
+      linkedin: "url('./assets/linkedin.png')",
+      twitter: "url('./assets/twitter.png')",
+      facebook: "url('./assets/facebook.png')",
+      instagram: "url('./assets/instagram.png')",
     },
   },
   screens: {
