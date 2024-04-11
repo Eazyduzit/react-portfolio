@@ -1,3 +1,4 @@
+import SocialMediaIcons from "../components/SocialMediaIcons"
 import useMediaQuery from "../hooks/useMediaQuery"
 import { motion } from "framer-motion"
 import AncorLink from "react-anchor-link-smooth-scroll"
