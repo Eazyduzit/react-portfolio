@@ -587,21 +587,25 @@ video {
   z-index: 10;
 }
 
-.z-40{
-  z-index: 40;
+.z-20{
+  z-index: 20;
 }
 
 .z-30{
   z-index: 30;
 }
 
-.z-20{
-  z-index: 20;
+.z-40{
+  z-index: 40;
 }
 
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-7{
+  margin-bottom: 1.75rem;
 }
 
 .ml-20{
@@ -612,20 +616,16 @@ video {
   margin-left: 33%;
 }
 
-.mt-16{
-  margin-top: 4rem;
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .mt-12{
   margin-top: 3rem;
 }
 
-.mb-7{
-  margin-bottom: 1.75rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
+.mt-16{
+  margin-top: 4rem;
 }
 
 .flex{
@@ -664,12 +664,12 @@ video {
   max-width: 400px;
 }
 
-.basis-3\/5{
-  flex-basis: 60%;
-}
-
 .basis-2\/5{
   flex-basis: 40%;
+}
+
+.basis-3\/5{
+  flex-basis: 60%;
 }
 
 .resize{
@@ -773,14 +773,14 @@ video {
   line-height: 2.25rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold{
@@ -813,6 +813,21 @@ video {
   transition-duration: 500ms;
 }
 
+.content-closeIcon{
+  --tw-content: url('./assets/close-icon.svg');
+  content: var(--tw-content);
+}
+
+.content-menuIcon{
+  --tw-content: url('./assets/menu-icon.svg');
+  content: var(--tw-content);
+}
+
+.content-profileImg{
+  --tw-content: url('./assets/profile-image.png');
+  content: var(--tw-content);
+}
+
 html,
 body,
 #root,
@@ -833,9 +848,19 @@ body,
   left: -5rem;
 }
 
+.before\:-left-\[25px\]::before{
+  content: var(--tw-content);
+  left: -25px;
+}
+
 .before\:-top-20::before{
   content: var(--tw-content);
   top: -5rem;
+}
+
+.before\:-top-\[70px\]::before{
+  content: var(--tw-content);
+  top: -70px;
 }
 
 .before\:left-\[-50\%\]::before{
@@ -846,16 +871,6 @@ body,
 .before\:top-\[-50\%\]::before{
   content: var(--tw-content);
   top: -50%;
-}
-
-.before\:-left-\[25px\]::before{
-  content: var(--tw-content);
-  left: -25px;
-}
-
-.before\:-top-\[70px\]::before{
-  content: var(--tw-content);
-  top: -70px;
 }
 
 .before\:z-\[-1\]::before{

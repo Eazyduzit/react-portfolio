@@ -28,6 +28,9 @@ export const theme = {
       person1: "url('./assets/person-1.png')",
       person2: "url('./assets/person-2.png')",
       person3: "url('./assets/person-3.png')",
+      profileImg: "url('./assets/profile-image.png')",
+      menuIcon: "url('./assets/menu-icon.svg')",
+      closeIcon: "url('./assets/close-icon.svg')",
     },
   },
   screens: {
