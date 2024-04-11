@@ -70,6 +70,15 @@ const Landing = ({ setSelectedPage }) => {
           >
             Contact Me
           </AncorLink>
+          <AncorLink
+            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            onClick={() => setSelectedPage("contact")}
+            href="#contact"
+          >
+            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
+              Let's Talk..
+            </div>
+          </AncorLink>
         </motion.div>
       </div>
     </section>
