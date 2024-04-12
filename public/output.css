@@ -881,6 +881,16 @@ video {
   content: var(--tw-content);
 }
 
+.content-facebook{
+  --tw-content: url('./assets/facebook.png');
+  content: var(--tw-content);
+}
+
+.content-instagram{
+  --tw-content: url('./assets/instagram.png');
+  content: var(--tw-content);
+}
+
 .content-linkedin{
   --tw-content: url('./assets/linkedin.png');
   content: var(--tw-content);
@@ -893,16 +903,6 @@ video {
 
 .content-profileImg{
   --tw-content: url('./assets/profile-image.png');
-  content: var(--tw-content);
-}
-
-.content-facebook{
-  --tw-content: url('./assets/facebook.png');
-  content: var(--tw-content);
-}
-
-.content-instagram{
-  --tw-content: url('./assets/instagram.png');
   content: var(--tw-content);
 }
 
