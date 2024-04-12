@@ -19,7 +19,21 @@ const MySkills = () => {
           <p className="font-playfair font-semibold text-4xl mb-5">
             MY <span className="text-red">SKILLS</span>
           </p>
+          <LineGradient width="w-1/3" />
+          <p className="mt-10 mb-7">
+            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut fames odio in at.
+          </p>
         </motion.div>
+
+        <div className="mt-16 md:mt-0">
+          {isAboveMediumScreens ? (
+            <div>
+              <img />
+            </div>
+          ) : (
+            <div></div>
+          )}
+        </div>
       </div>
     </section>
   )
