@@ -29,6 +29,7 @@ export const theme = {
       person2: "url('./assets/person-2.png')",
       person3: "url('./assets/person-3.png')",
       profileImg: "url('./assets/profile-image.png')",
+      skillsImg: "url('./assets/skills-image.png')",
       menuIcon: "url('./assets/menu-icon.svg')",
       closeIcon: "url('./assets/close-icon.svg')",
       linkedin: "url('./assets/linkedin.png')",
