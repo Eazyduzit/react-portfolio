@@ -26,6 +26,17 @@ const Projects = () => {
           Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut fames odio in at.
         </p>
       </motion.div>
+
+      {/* PROJECTS */}
+      <div className="flex justify-center">
+        <motion.div
+          className="sm:grid sm:grid-cols-3"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={container}
+        ></motion.div>
+      </div>
     </section>
   )
 }
