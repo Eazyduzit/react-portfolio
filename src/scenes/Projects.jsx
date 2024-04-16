@@ -34,7 +34,7 @@ const Projects = () => {
     <section id="projects" className="pt-48 pb-48">
       {/* HEADINGS */}
       <motion.div
-        className="md:w-2/4 mx-auto text-center"
+        className="md:w-2/5 mx-auto text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -61,7 +61,7 @@ const Projects = () => {
           className="sm:grid sm:grid-cols-3"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={container}
         >
           {/* ROW 1 */}
