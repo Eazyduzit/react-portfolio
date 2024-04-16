@@ -36,6 +36,8 @@ export const theme = {
       twitter: "url('./assets/twitter.png')",
       facebook: "url('./assets/facebook.png')",
       instagram: "url('./assets/instagram.png')",
+      project1: "url('./assets/project-1.jpeg')",
+      // project2: "url('./assets/project-2.jpeg')",
     },
   },
   screens: {
