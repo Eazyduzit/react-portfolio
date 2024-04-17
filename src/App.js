@@ -3,6 +3,7 @@ import DotGroup from "./scenes/DotGroup"
 import Landing from "./scenes/Landing"
 import MySkills from "./scenes/MySkills"
 import Projects from "./scenes/Projects"
+import Testimonials from "./scenes/Testimonials"
 import LineGradient from "./components/LineGradient"
 import { useEffect, useState } from "react"
 import useMediaQuery from "./hooks/useMediaQuery"
@@ -41,6 +42,10 @@ function App() {
       <LineGradient />
       <div className="w-5/6 mx-auto">
         <Projects />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Testimonials />
       </div>
     </div>
   )
