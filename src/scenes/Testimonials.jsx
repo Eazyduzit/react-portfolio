@@ -14,7 +14,9 @@ const Testimonials = () => {
         transition={{ duration: 0.5 }}
         variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red">TESTIMONIALS</p>
+        <p className="font-playfair font-semibold text-4xl mb-5">
+          <span className="text-red">TEST</span>IMONIALS
+        </p>
         <LineGradient width=" mx-auto w-2/5" />
         <p className="mt-10">
           Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut fames odio in at.
