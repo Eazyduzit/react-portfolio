@@ -20,6 +20,7 @@ const Contact = () => {
     <section id="contact" className="py-48">
       {/* HEADINGS */}
       <motion.div
+        className="flex justify-end w-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -31,7 +32,7 @@ const Contact = () => {
             <span className="text-red">CONTACT</span> ME
           </p>
           <div className="flex md:justify-end my-5">
-            <LineGradient width=" mx-auto w-2/5" />
+            <LineGradient width="w-1/2" />
           </div>
         </div>
       </motion.div>
@@ -57,7 +58,12 @@ const Contact = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
           variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}
         >
-          <form target="_blank" onSubmit={onSubmit} action="" method="POST">
+          <form
+            target="_blank"
+            onSubmit={onSubmit}
+            action="https://formsubmit.co/8881aa1ce15c0dcc8179de03e48ff71a"
+            method="POST"
+          >
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
               type="text"
@@ -107,6 +113,13 @@ const Contact = () => {
                 {errors.message.type === "maxLength" && "Max length is 2000 characters.."}
               </p>
             )}
+
+            <button
+              type="submit"
+              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+            >
+              SEND ME A MESSAGE
+            </button>
           </form>
         </motion.div>
       </div>
