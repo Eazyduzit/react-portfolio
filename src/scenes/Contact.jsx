@@ -89,6 +89,24 @@ const Contact = () => {
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
             )}
+
+            <textarea
+              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              type="text"
+              placeholder="MESSAGE"
+              rows={4}
+              cols={50}
+              {...register("message", {
+                required: true,
+                maxLength: 2000,
+              })}
+            />
+            {errors.message && (
+              <p className="text-red mt-1">
+                {errors.message.type === "required" && "This field is required."}
+                {errors.message.type === "maxLength" && "Max length is 2000 characters.."}
+              </p>
+            )}
           </form>
         </motion.div>
       </div>
