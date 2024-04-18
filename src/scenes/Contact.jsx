@@ -73,6 +73,22 @@ const Contact = () => {
                 {errors.name.type === "maxLength" && "Max length is 100 characters."}
               </p>
             )}
+
+            <input
+              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              type="text"
+              placeholder="EMAIL"
+              {...register("email", {
+                required: true,
+                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+              })}
+            />
+            {errors.email && (
+              <p className="text-red mt-1">
+                {errors.email.type === "required" && "This field is required."}
+                {errors.email.type === "pattern" && "Invalid email address."}
+              </p>
+            )}
           </form>
         </motion.div>
       </div>
