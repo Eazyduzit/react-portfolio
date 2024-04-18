@@ -15,7 +15,7 @@ const Testimonials = () => {
         variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }}
       >
         <p className="font-playfair font-semibold text-4xl mb-5">
-          <span className="text-red">TEST</span>IMONIALS
+          <span className="text-yellow">TEST</span>IMONIALS
         </p>
         <LineGradient width=" mx-auto w-2/5" />
         <p className="mt-10">

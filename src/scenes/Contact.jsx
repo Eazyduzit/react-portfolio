@@ -17,8 +17,24 @@ const Contact = () => {
   }
 
   return (
-    <section>
-      <div>Contact</div>
+    <section id="contact" className="py-48">
+      {/* HEADINGS */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }}
+      >
+        <div>
+          <p className="font-playfair font-semibold text-4xl">
+            <span className="text-red">CONTACT</span> ME
+          </p>
+          <div className="flex md:justify-end my-5">
+            <LineGradient width=" mx-auto w-2/5" />
+          </div>
+        </div>
+      </motion.div>
     </section>
   )
 }
