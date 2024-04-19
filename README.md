@@ -1,8 +1,16 @@
-# Getting Started with Create React App
+# App is ready to go live, will be deployed on Netlify.com
+
+## This application is built using React, Tailwind CSS, Framer-Motion & React Hook Form
+
+Form is working and all submissions will go to my alternate email. (set up using: https://formsubmit.co/)
+
+### All credit goes to EdRoh. https://www.youtube.com/watch?v=JSJ8ftr92Vw&ab_channel=EdRoh
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
