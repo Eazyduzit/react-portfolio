@@ -66,17 +66,17 @@ const Projects = () => {
           <div className="flex justify-center text-center items-center p-10 bg-red max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" subtitle="Hello World" />
-          <Project title="Project 2" subtitle="Aliquam, amet dui feugiat facilisi dui." />
+          <Project title="Project 1" subtitle="Mobile Application" />
+          <Project title="Project 2" subtitle="Online Shopping" />
 
           {/* ROW 2 */}
-          <Project title="Project 3" subtitle="Lorem dorem trorem" />
+          <Project title="Project 3" subtitle="Cereal Receipes" />
           <Project title="Project 4" subtitle="Creative Styles" />
-          <Project title="Project 5" subtitle="Shopping Cart App" />
+          <Project title="Project 5" subtitle="Food Delivery App" />
 
           {/* ROW 3 */}
-          <Project title="Project 6" subtitle="Financal Project" />
-          <Project title="Project 7" subtitle="Sports Application" />
+          <Project title="Project 6" subtitle="Music Newsletter" />
+          <Project title="Project 7" subtitle="Financal Project" />
           <div className="flex justify-center text-center items-center p-10 bg-blue max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
             SMOOTH USER EXPERIENCE
           </div>
