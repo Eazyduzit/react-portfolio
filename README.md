@@ -1,4 +1,4 @@
-# App is ready to go live, will be deployed on Netlify.com
+# App is now LIVE hosted on https://my-portfolio-app2024.netlify.app/
 
 ## This application is built using React, Tailwind CSS, Framer-Motion & React Hook Form
 
